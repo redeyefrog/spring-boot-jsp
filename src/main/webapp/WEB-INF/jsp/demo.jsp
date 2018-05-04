@@ -29,7 +29,8 @@
 	}
 	
 	function showMessage(arg) {
-		document.getElementById('msg').innerHTML = arg;
+		var obj = JSON.parse(arg);
+		document.getElementById('msg').innerHTML = obj.msg;
 	}
 </script>
 </html>

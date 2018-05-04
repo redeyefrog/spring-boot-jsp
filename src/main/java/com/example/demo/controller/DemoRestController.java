@@ -15,22 +15,22 @@ public class DemoRestController {
 
 	@GetMapping("/doGet")
 	public String select() {
-		return "Query Data";
+		return "{\"msg\":\"Query Data\"}";
 	}
 
 	@PostMapping("/doPost")
 	public String insert() {
-		return "Save Data";
+		return "{\"msg\":\"Save Data\"}";
 	}
 
 	@PutMapping("/doPut")
 	public String update(Model model) {
-		return "Update Data";
+		return "{\"msg\":\"Update Data\"}";
 	}
 	
 	@DeleteMapping("/doDelete")
 	public String delete(Model model) {
-		return "Delete Data";
+		return "{\"msg\":\"Delete Data\"}";
 	}
 
 }
